@@ -16,4 +16,4 @@ O projeto "Processamento de pedidos em um sistema de e-commerce" consiste em imp
 
 7 - ProcessamentoPedido: Classe principal que contém o método main(). Cria a cadeia de manipuladores na ordem desejada (Estoque, Pagamento, Envio). Cria uma lista de pedidos de exemplo e itera sobre eles, chamando o método manipularPedido() do ManipuladorEnvio para processá-los.
 
-Casos de teste em JUnit: apresentado um caso de teste utilizando o framework JUnit para verificar se o processamento de pedidos está ocorrendo corretamente. O caso de teste cria a cadeia de manipuladores, cria pedidos de exemplo, chama o método manipularPedido() e utiliza asserts para verificar se os pedidos foram processados corretamente.
+Casos de testes em JUnit: apresentado um caso de teste utilizando o framework JUnit para verificar se o processamento de pedidos está ocorrendo corretamente. O caso de teste cria a cadeia de manipuladores, cria pedidos de exemplo, chama o método manipularPedido() e utiliza asserts para verificar se os pedidos foram processados corretamente.
