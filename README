@@ -3,11 +3,17 @@ Padrão Chain of Responsability - Processamento de pedidos em um sistema de e-co
 O projeto "Processamento de pedidos em um sistema de e-commerce" consiste em implementar o padrão Chain of Responsibility para processar pedidos em um sistema de e-commerce. Ele é composto pelas seguintes classes:
 
 1 - Pedido: Representa um pedido no sistema de e-commerce. Possui um atributo para armazenar o valor do pedido.
-2 - Manipulador Pedido Base: Classe abstrata que implementa a interface
+
+2 - Manipulador Pedido Base: Classe abstrata que implementa a interface.
+
 3 - Manipulador Pedido: Interface que define o contrato para os manipuladores de pedido. Possui o método "ManipuladorPedido()".
+
 4 - Manipulador Pagamento: Implementação concreta de ManipuladorPedidoBase. Verifica se o pagamento é válido para processar o pedido. Se for válido, chama o próximo manipulador na cadeia.
+
 5 - Manipulador Estoque: Implementação concreta de ManipuladorPedidoBase. Verifica-se o estoque está disponível para processar o pedido. Se estiver disponível, chama o próximo manipulador na cadeia.
+
 6 - Manipulador Envio: Implementação concreta de ManipuladorPedidoBase. Responsável por realizar o envio do pedido.
+
 7 - ProcessamentoPedido: Classe principal que contém o método main(). Cria a cadeia de manipuladores na ordem desejada (Estoque, Pagamento, Envio). Cria uma lista de pedidos de exemplo e itera sobre eles, chamando o método manipularPedido() do ManipuladorEnvio para processá-los.
 
 Casos de teste em JUnit: apresentado um caso de teste utilizando o framework JUnit para verificar se o processamento de pedidos está ocorrendo corretamente. O caso de teste cria a cadeia de manipuladores, cria pedidos de exemplo, chama o método manipularPedido() e utiliza asserts para verificar se os pedidos foram processados corretamente.
